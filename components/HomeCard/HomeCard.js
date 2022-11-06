@@ -2,7 +2,7 @@
 import styles from './HomeCard.module.scss';
 import { Button } from '../Basics/Button';
 
-const HomeCard = ({ url, title, description, percentage }) => {
+const HomeCard = ({ url, title, description, quantity, percentage }) => {
   return (
     <div className={styles.container}>
       <figure>
@@ -16,7 +16,7 @@ const HomeCard = ({ url, title, description, percentage }) => {
         </div>
         <div className={styles.moduleButton}>
           <img src='/img/modules.svg' alt='' />
-          <p className={styles.moduleLabel}>22 módulos</p>
+          <p className={styles.moduleLabel}>{quantity} módulos</p>
         </div>
         <div className={styles.buttonProgress}>
           <Button label='Acessar' />
