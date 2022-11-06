@@ -1,0 +1,30 @@
+@use 'sass:math';
+
+$gray-200: #d9d9d9;
+$gray-400: #858585;
+
+$orange-300: #b69260;
+$orange-400: #d39a4a;
+$orange-500: #ffa629;
+$orange-500-50: rgba(255, 166, 41, 0.5);
+
+$black-60: rgba(0, 0, 0, 0.6);
+$black-80: rgba(0, 0, 0, 0.8);
+
+/* Media Queries */
+$breakpoints: (
+  'mobile': 764px,
+  'tablet': 1048px,
+  'laptop': 1440px,
+);
+
+/* Mixins & Functions */
+@function calculateRem($size) {
+  @return math.div($size, 16px) * 1rem;
+}
+
+@mixin device($breakpoint) {
+  @media (max-width: map-get($breakpoints, $breakpoint)) {
+    @content;
+  }
+}
