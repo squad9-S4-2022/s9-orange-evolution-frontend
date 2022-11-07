@@ -1,0 +1,71 @@
+.nav_container{
+    background-color: #848484;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.img_logo{
+    padding: 23px 40px 23px 24px;
+}
+
+.link_itens{
+    display: flex;
+    list-style: none;
+}
+
+.link_itens li {
+    margin-right: 20px;
+}
+
+.link_itens a{
+    color: #FFF;
+    text-decoration: none;
+    padding: 5px;
+    transition: .3s;
+}
+
+.link_itens a:hover{
+    color: #FFA629;
+}
+
+.img_lupa{
+    height: 15px;
+    position: absolute;
+    top: 13px;
+    right: 320px;
+    cursor: pointer;
+}
+
+.form_class{
+    position: relative;
+}
+
+.form_input{
+    border-radius: 20px;
+    width: 350px;
+    height: 40px;
+    border: none ;
+    font-size: 12px;
+}
+
+.img_class{
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.25)), linear-gradient(0deg, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.25)), rgba(255, 255, 255, 0.25);
+    border-radius: 100%;
+    padding: 0.5em;
+}
+
+.img_notificacao{
+    cursor: pointer;
+}
+
+.img_user{
+    height: 50px;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+.form_input::placeholder{
+    padding-left: 3em;
+}
+
