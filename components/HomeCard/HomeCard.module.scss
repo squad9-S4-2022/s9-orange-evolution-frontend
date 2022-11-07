@@ -2,7 +2,7 @@
 
 .container {
   width: calculateRem(448px);
-  height: calculateRem(420px);
+  height: calculateRem(460px);
   background-color: $gray-200;
   border-radius: 1rem;
   display: grid;
@@ -36,7 +36,13 @@
   line-height: calculateRem(20px);
 }
 
-.moduleButton {
+.informationWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: calculateRem(4px);
+}
+
+.informationShield {
   display: flex;
   gap: calculateRem(20px);
   align-items: center;
@@ -47,19 +53,13 @@
   color: $black-60;
 }
 
-.moduleLabel {
+.informationLabel {
   font-weight: 500;
   line-height: calculateRem(19.36px);
 }
 
 .buttonProgress {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
-}
-
-.percentageLabel {
-  font-weight: 600;
-  font-size: calculateRem(10px);
-  color: $black-80;
 }

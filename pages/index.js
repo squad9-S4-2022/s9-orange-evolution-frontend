@@ -14,7 +14,7 @@ export default function Home() {
           description='Card description. Lorem ipsum dolor sit amet, consectetur elit adi, sed do eiusm tem incididunt ut. Lorem ips dolor sit.
         Lorem ipsum dolor sit amet, consectetur.'
           quantity='22'
-          percentage='25'
+          hours='254'
         />
 
         <HomeCard
@@ -23,7 +23,7 @@ export default function Home() {
           description='Card description. Lorem ipsum dolor sit amet, consectetur elit adi, sed do eiusm tem incididunt ut. Lorem ips dolor sit.
               Lorem ipsum dolor sit amet, consectetur.'
           quantity='15'
-          percentage='50'
+          hours='195'
         />
         <HomeCard
           url='https://source.unsplash.com/random/'
@@ -31,7 +31,7 @@ export default function Home() {
           description='Card description. Lorem ipsum dolor sit amet, consectetur elit adi, sed do eiusm tem incididunt ut. Lorem ips dolor sit.
               Lorem ipsum dolor sit amet, consectetur.'
           quantity='12'
-          percentage='75'
+          hours='74'
         />
       </div>
     </>

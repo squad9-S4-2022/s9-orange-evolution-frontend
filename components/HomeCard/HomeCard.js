@@ -2,7 +2,7 @@
 import styles from './HomeCard.module.scss';
 import { Button } from '../Basics/Button';
 
-const HomeCard = ({ url, title, description, quantity, percentage }) => {
+const HomeCard = ({ url, title, description, quantity, hours }) => {
   return (
     <div className={styles.container}>
       <figure>
@@ -14,16 +14,19 @@ const HomeCard = ({ url, title, description, quantity, percentage }) => {
         <div className={styles.description}>
           <p>{description}</p>
         </div>
-        <div className={styles.moduleButton}>
-          <img src='/img/modules.svg' alt='' />
-          <p className={styles.moduleLabel}>{quantity} módulos</p>
+
+        <div className={styles.informationWrapper}>
+          <div className={styles.informationShield}>
+            <img src='/img/modules.svg' alt='' />
+            <p className={styles.informationLabel}>{quantity} módulos</p>
+          </div>
+          <div className={styles.informationShield}>
+            <img src='/img/timer.svg' alt='' />
+            <p className={styles.informationLabel}>{hours} horas de conteúdo</p>
+          </div>
         </div>
         <div className={styles.buttonProgress}>
           <Button label='Acessar' />
-          <label className={styles.percentageLabel}>
-            {percentage}% completo{' '}
-            <progress value={percentage} max='100'></progress>
-          </label>
         </div>
       </div>
     </div>
