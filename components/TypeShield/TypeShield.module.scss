@@ -1,0 +1,11 @@
+@import '../../styles/base';
+
+.shield {
+  width: calculateRem(106px);
+  height: calculateRem(40px);
+  border: 1px solid red;
+}
+
+.artigo {
+  border-color: green;
+}

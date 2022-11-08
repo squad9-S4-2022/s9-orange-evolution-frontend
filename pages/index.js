@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import { Accordion } from '../components/Accordion/Accordion';
 import { HomeCard } from '../components/HomeCard/HomeCard';
 
 export default function Home() {
@@ -8,7 +9,7 @@ export default function Home() {
         <title>Home</title>
       </Head>
       <div style={{ display: 'flex', gap: '10px', padding: '15px' }}>
-        <HomeCard
+        {/* <HomeCard
           url='https://source.unsplash.com/random/'
           title='Desenvolvimento FullStack'
           description='Card description. Lorem ipsum dolor sit amet, consectetur elit adi, sed do eiusm tem incididunt ut. Lorem ips dolor sit.
@@ -32,7 +33,9 @@ export default function Home() {
               Lorem ipsum dolor sit amet, consectetur.'
           quantity='12'
           hours='74'
-        />
+        /> */}
+
+        <Accordion />
       </div>
     </>
   );

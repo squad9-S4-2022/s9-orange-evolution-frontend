@@ -1,0 +1,54 @@
+@import '../../styles/base';
+
+.details {
+  // border: 1px solid red;
+  width: 100%;
+  background-color: $gray-200-50;
+  display: block;
+}
+
+.details > .item {
+  border: 1px solid white;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.summary {
+  outline: none;
+  padding-block: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $gray-200;
+  color: black;
+  position: relative;
+  cursor: pointer;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: calculateRem(10px);
+  font-weight: 600;
+  line-height: calculateRem(24px);
+
+  &__title {
+    font-size: calculateRem(18px);
+    color: $black-60;
+  }
+
+  &__subtitle {
+    font-size: calculateRem(10px);
+    color: $black-40;
+  }
+}
+
+.type_button {
+  display: flex;
+  align-self: flex-end;
+  gap: calculateRem(106px);
+}

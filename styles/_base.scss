@@ -1,6 +1,7 @@
 @use 'sass:math';
 
 $gray-200: #d9d9d9;
+$gray-200-50: rgba(217, 217, 217, 0.5);
 $gray-400: #858585;
 
 $orange-300: #b69260;
@@ -8,6 +9,7 @@ $orange-400: #d39a4a;
 $orange-500: #ffa629;
 $orange-500-50: rgba(255, 166, 41, 0.5);
 
+$black-40: rgba(0, 0, 0, 0.4);
 $black-60: rgba(0, 0, 0, 0.6);
 $black-80: rgba(0, 0, 0, 0.8);
 
