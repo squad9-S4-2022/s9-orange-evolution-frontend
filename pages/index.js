@@ -2,6 +2,47 @@ import Head from 'next/head';
 import { Accordion } from '../components/Accordion/Accordion';
 import { HomeCard } from '../components/HomeCard/HomeCard';
 
+const content = [
+  { name: 'O que é HTML?' },
+  { name: 'Aprendendo na prática' },
+  { name: 'Conceito XYZ' },
+  {
+    name: 'Primeiros Códigos',
+    courses: [
+      {
+        courseName: 'HTML attribute',
+        estimatedTime: '14 minutos',
+        coveredTopics: '<input>; <form>; <body>',
+        isOriginal: true,
+        type: 'artigo',
+      },
+      {
+        courseName: 'HTML attribute',
+        estimatedTime: '15 minutos',
+        coveredTopics: '<input>; <form>; <body>',
+        isOriginal: false,
+        type: 'video',
+      },
+      {
+        courseName: 'HTML attribute',
+        estimatedTime: '16 minutos',
+        coveredTopics: '<input>; <form>; <body>',
+        isOriginal: false,
+        type: 'podcast',
+      },
+      {
+        courseName: 'HTML attribute',
+        estimatedTime: '16 minutos',
+        coveredTopics: '<input>; <form>; <body>',
+        isOriginal: false,
+        type: 'curso',
+      },
+    ],
+  },
+  { name: 'Introdução à CSS' },
+  { name: 'Introdução à JavaScript' },
+];
+
 export default function Home() {
   return (
     <>
@@ -35,7 +76,7 @@ export default function Home() {
           hours='74'
         /> */}
 
-        <Accordion />
+        <Accordion content={content} />
       </div>
     </>
   );

@@ -1,5 +1,11 @@
 @import '../../styles/base';
 
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
 .details {
   // border: 1px solid red;
   width: 100%;
@@ -22,10 +28,30 @@
   align-items: center;
   justify-content: space-between;
   background-color: $gray-200;
-  color: black;
   position: relative;
   cursor: pointer;
   width: 100%;
+  padding: calculateRem(10px) calculateRem(47px) calculateRem(16px);
+  font-weight: 700;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  gap: calculateRem(174px);
+
+  &__index {
+    font-size: calculateRem(40px);
+    line-height: calculateRem(48.41px);
+    color: $black-60;
+    min-width: calculateRem(54px);
+  }
+
+  &__name {
+    font-size: calculateRem(24px);
+    line-height: calculateRem(29.05px);
+    color: $black-80;
+  }
 }
 
 .groupWrapper {
