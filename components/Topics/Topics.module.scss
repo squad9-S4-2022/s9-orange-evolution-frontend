@@ -1,0 +1,18 @@
+.div_card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #D9D9D9;
+    padding: 1em 1em;
+    margin: 2em 2em;
+    width: 450px;
+    border-radius: 0.5em;
+    line-height: 2em;
+}
+
+.list_card {
+    list-style-image: url(../../public/seta.svg);
+}
+
+
