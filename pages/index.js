@@ -3,9 +3,105 @@ import { Accordion } from '../components/Accordion/Accordion';
 import { HomeCard } from '../components/HomeCard/HomeCard';
 
 const content = [
-  { name: 'O que é HTML?' },
-  { name: 'Aprendendo na prática' },
-  { name: 'Conceito XYZ' },
+  {
+    name: 'O que é HTML?',
+    courses: [
+      {
+        courseName: 'HTML attribute',
+        estimatedTime: '14 minutos',
+        coveredTopics: '<input>; <form>; <body>',
+        isOriginal: true,
+        type: 'artigo',
+      },
+      {
+        courseName: 'HTML attribute',
+        estimatedTime: '15 minutos',
+        coveredTopics: '<input>; <form>; <body>',
+        isOriginal: false,
+        type: 'video',
+      },
+      {
+        courseName: 'HTML attribute',
+        estimatedTime: '16 minutos',
+        coveredTopics: '<input>; <form>; <body>',
+        isOriginal: false,
+        type: 'podcast',
+      },
+      {
+        courseName: 'HTML attribute',
+        estimatedTime: '16 minutos',
+        coveredTopics: '<input>; <form>; <body>',
+        isOriginal: false,
+        type: 'curso',
+      },
+    ],
+  },
+  {
+    name: 'Aprendendo na prática',
+    courses: [
+      {
+        courseName: 'HTML attribute',
+        estimatedTime: '14 minutos',
+        coveredTopics: '<input>; <form>; <body>',
+        isOriginal: true,
+        type: 'artigo',
+      },
+      {
+        courseName: 'HTML attribute',
+        estimatedTime: '15 minutos',
+        coveredTopics: '<input>; <form>; <body>',
+        isOriginal: false,
+        type: 'video',
+      },
+      {
+        courseName: 'HTML attribute',
+        estimatedTime: '16 minutos',
+        coveredTopics: '<input>; <form>; <body>',
+        isOriginal: false,
+        type: 'podcast',
+      },
+      {
+        courseName: 'HTML attribute',
+        estimatedTime: '16 minutos',
+        coveredTopics: '<input>; <form>; <body>',
+        isOriginal: false,
+        type: 'curso',
+      },
+    ],
+  },
+  {
+    name: 'Conceito XYZ',
+    courses: [
+      {
+        courseName: 'HTML attribute',
+        estimatedTime: '14 minutos',
+        coveredTopics: '<input>; <form>; <body>',
+        isOriginal: true,
+        type: 'artigo',
+      },
+      {
+        courseName: 'HTML attribute',
+        estimatedTime: '15 minutos',
+        coveredTopics: '<input>; <form>; <body>',
+        isOriginal: false,
+        type: 'video',
+      },
+      {
+        courseName: 'HTML attribute',
+        estimatedTime: '16 minutos',
+        coveredTopics: '<input>; <form>; <body>',
+        isOriginal: false,
+        type: 'podcast',
+      },
+      {
+        courseName: 'HTML attribute',
+        estimatedTime: '16 minutos',
+        coveredTopics: '<input>; <form>; <body>',
+        isOriginal: false,
+        type: 'curso',
+      },
+    ],
+  },
   {
     name: 'Primeiros Códigos',
     courses: [
@@ -39,8 +135,72 @@ const content = [
       },
     ],
   },
-  { name: 'Introdução à CSS' },
-  { name: 'Introdução à JavaScript' },
+  {
+    name: 'Introdução à CSS',
+    courses: [
+      {
+        courseName: 'HTML attribute',
+        estimatedTime: '14 minutos',
+        coveredTopics: '<input>; <form>; <body>',
+        isOriginal: true,
+        type: 'artigo',
+      },
+      {
+        courseName: 'HTML attribute',
+        estimatedTime: '15 minutos',
+        coveredTopics: '<input>; <form>; <body>',
+        isOriginal: false,
+        type: 'video',
+      },
+      {
+        courseName: 'HTML attribute',
+        estimatedTime: '16 minutos',
+        coveredTopics: '<input>; <form>; <body>',
+        isOriginal: false,
+        type: 'podcast',
+      },
+      {
+        courseName: 'HTML attribute',
+        estimatedTime: '16 minutos',
+        coveredTopics: '<input>; <form>; <body>',
+        isOriginal: false,
+        type: 'curso',
+      },
+    ],
+  },
+  {
+    name: 'Introdução à JavaScript',
+    courses: [
+      {
+        courseName: 'HTML attribute',
+        estimatedTime: '14 minutos',
+        coveredTopics: '<input>; <form>; <body>',
+        isOriginal: true,
+        type: 'artigo',
+      },
+      {
+        courseName: 'HTML attribute',
+        estimatedTime: '15 minutos',
+        coveredTopics: '<input>; <form>; <body>',
+        isOriginal: false,
+        type: 'video',
+      },
+      {
+        courseName: 'HTML attribute',
+        estimatedTime: '16 minutos',
+        coveredTopics: '<input>; <form>; <body>',
+        isOriginal: false,
+        type: 'podcast',
+      },
+      {
+        courseName: 'HTML attribute',
+        estimatedTime: '16 minutos',
+        coveredTopics: '<input>; <form>; <body>',
+        isOriginal: false,
+        type: 'curso',
+      },
+    ],
+  },
 ];
 
 export default function Home() {
