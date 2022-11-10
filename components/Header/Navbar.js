@@ -9,9 +9,9 @@ export default function Navbar(){
                 <img src="/logo.svg" alt="Logo da Empresa" className={styles.img_logo}/>
                 <ul className={styles.link_itens}>
                     <li><Link href="">Trilhas</Link></li>
-                    <li><Link href="/glossario">Glossário</Link></li>
-                    <li><Link href="/sobre">Sobre</Link></li>
-                    <li><Link href="/duvidas">Dúvidas</Link></li>
+                    <li><Link href="/Glossario">Glossário</Link></li>
+                    <li><Link href="/Exercicios">Exercícios</Link></li>
+                    <li><Link href="/Sobre">Sobre</Link></li>
                 </ul>
             </div>
 
@@ -23,7 +23,7 @@ export default function Navbar(){
                 <div className={styles.img_class}>
                     <img src="/notificacao.svg" alt="Botao de busca" className={styles.img_notificacao}/>
                 </div>
-                <img src="/user.svg" alt="Foto de perfil do usuario" className={styles.img_user}/>
+                <img src="/user.png" alt="Foto de perfil do usuario" className={styles.img_user}/>
             </div>    
         </nav>
     )

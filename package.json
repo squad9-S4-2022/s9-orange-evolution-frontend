@@ -27,5 +27,18 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
-  }
+  },
+  "description": "This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).",
+  "main": "commitlint.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/squad9-S4-2022/s9-orange-evolution-frontend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/squad9-S4-2022/s9-orange-evolution-frontend/issues"
+  },
+  "homepage": "https://github.com/squad9-S4-2022/s9-orange-evolution-frontend#readme"
 }
