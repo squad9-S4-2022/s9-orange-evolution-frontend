@@ -1,8 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
 import styles from './HomeCard.module.scss';
 import { Button } from '../Basics/Button';
+import Router from 'next/router';
 
-const HomeCard = ({ url, title, description, quantity, hours }) => {
+const HomeCard = ({ url, title, description, quantity, hours, path }) => {
   return (
     <div className={styles.container}>
       <figure>
@@ -26,7 +27,12 @@ const HomeCard = ({ url, title, description, quantity, hours }) => {
           </div>
         </div>
         <div className={styles.buttonProgress}>
-          <Button label='Acessar' />
+          <Button
+            label='Acessar'
+            onClick={() => {
+              Router.push(`/${path}`);
+            }}
+          />
         </div>
       </div>
     </div>
