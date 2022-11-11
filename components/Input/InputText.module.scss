@@ -1,0 +1,21 @@
+.campo_texto label{
+    color: #FF5A23;
+    font-size: 22px;
+    font-weight: 600;
+    margin: .8rem 0;
+    display: flex;
+}
+
+.campo_texto input{
+    border: 2px solid #FF5A23;
+    font-size: 20px;
+    font-size: 400;
+    border-radius: 5px;
+    height: 2.5rem;
+}
+
+.campo_texto input:focus{
+    border: 2px solid #FF5A23;;
+    outline: 0;
+}
+

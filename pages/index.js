@@ -1,6 +1,4 @@
 import Head from 'next/head';
-import Footer from '../components/Footer/Footer';
-import Navbar from '../components/Header/Navbar'
 import { HomeCard } from '../components/HomeCard/HomeCard';
 import styles from '../styles/Home.module.scss';
 
@@ -10,6 +8,7 @@ export default function Home() {
       <Head>
         <title>Home</title>
       </Head>
+
 
       <header className={styles.header}>
         <h1 className={styles.title}>O que você gostaria de aprender hoje?</h1>
@@ -50,6 +49,7 @@ export default function Home() {
           path='track/qualityassurance'
         />
       </section>
+      
     </>
   );
 }
