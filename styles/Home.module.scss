@@ -19,3 +19,10 @@
   font-size: calculateRem(14px);
   line-height: calculateRem(20px);
 }
+
+.cardWrapper {
+  display: flex;
+  justify-content: center;
+  gap: calculateRem(22px);
+  margin: calculateRem(18px) calculateRem(24px);
+}

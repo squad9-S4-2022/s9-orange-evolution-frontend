@@ -1,5 +1,5 @@
 const QualityAssurance = () => {
-  return <p>QualityAssurance</p>;
+  return <p style={{color: 'white'}}>QualityAssurance</p>;
 };
 
 export default QualityAssurance;

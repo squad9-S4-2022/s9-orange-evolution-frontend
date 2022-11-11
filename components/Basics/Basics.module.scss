@@ -3,7 +3,7 @@
 .button {
   width: calculateRem(109px);
   height: calculateRem(35px);
-  background-color: $orange-500;
+  background-color: $orange-700;
   border-radius: calculateRem(5px);
   color: white;
   font-weight: 500;
@@ -12,4 +12,9 @@
   letter-spacing: calculateRem(0.46px);
   cursor: pointer;
   border: none;
+  transition: all 0.5s ease;
+
+  &:hover{
+    background-color: $orange-500;
+  }
 }

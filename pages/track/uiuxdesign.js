@@ -1,5 +1,5 @@
 const UiUxDesign = () => {
-  return <p>UiUxDesign</p>;
+  return <p style={{ color: 'white' }}>UiUxDesign</p>;
 };
 
 export default UiUxDesign;

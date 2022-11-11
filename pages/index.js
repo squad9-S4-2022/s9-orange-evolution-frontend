@@ -7,7 +7,6 @@ import styles from '../styles/Home.module.scss';
 export default function Home() {
   return (
     <>
-    <Navbar />
       <Head>
         <title>Home</title>
       </Head>
@@ -21,7 +20,7 @@ export default function Home() {
         </p>
       </header>
 
-      <div style={{ display: 'flex', gap: '10px', padding: '15px' }}>
+      <section className={styles.cardWrapper}>
         <HomeCard
           url='/img/fullstack.png'
           title='Desenvolvimento FullStack'
@@ -50,8 +49,7 @@ export default function Home() {
           hours='74'
           path='track/qualityassurance'
         />
-      </div>
-      <Footer />
+      </section>
     </>
   );
 }

@@ -1,5 +1,5 @@
 const FullStack = () => {
-  return <p>FullStack</p>
+  return <p style={{color: "white"}}>FullStack</p>
 }
 
 export default FullStack
