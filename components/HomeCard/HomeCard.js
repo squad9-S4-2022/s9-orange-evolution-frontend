@@ -43,14 +43,6 @@ const HomeCard = ({ url, title, description, quantity, hours, path }) => {
             />
           </div>
         </div>
-        <div className={styles.buttonProgress}>
-          <Button
-            label='Acessar'
-            onClick={() => {
-              Router.push(`/${path}`);
-            }}
-          />
-        </div>
       </div>
     </div>
   );
