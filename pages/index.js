@@ -7,7 +7,6 @@ import styles from '../styles/Home.module.scss';
 export default function Home() {
   return (
     <>
-    <Navbar />
       <Head>
         <title>Home</title>
       </Head>
