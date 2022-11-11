@@ -1,9 +1,12 @@
 import Head from 'next/head';
+import Footer from '../components/Footer/Footer';
+import Navbar from '../components/Header/Navbar'
 import { HomeCard } from '../components/HomeCard/HomeCard';
 
 export default function Home() {
   return (
     <>
+    <Navbar />
       <Head>
         <title>Home</title>
       </Head>
@@ -34,6 +37,7 @@ export default function Home() {
           hours='74'
         />
       </div>
+      <Footer />
     </>
   );
 }
