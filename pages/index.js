@@ -1,10 +1,13 @@
 import Head from 'next/head';
+import Footer from '../components/Footer/Footer';
+import Navbar from '../components/Header/Navbar'
 import { HomeCard } from '../components/HomeCard/HomeCard';
 import styles from '../styles/Home.module.scss';
 
 export default function Home() {
   return (
     <>
+    <Navbar />
       <Head>
         <title>Home</title>
       </Head>
@@ -48,6 +51,7 @@ export default function Home() {
           path='track/qualityassurance'
         />
       </div>
+      <Footer />
     </>
   );
 }
