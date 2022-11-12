@@ -221,18 +221,20 @@ export default function Home() {
         Lorem ipsum dolor sit amet, consectetur.'
           quantity='22'
           hours='254'
+          path='track/fullstack'
         />
 
         <HomeCard
-          url='https://source.unsplash.com/random/'
+          url='/img/uiux.png'
           title='UX/UI Design'
           description='Card description. Lorem ipsum dolor sit amet, consectetur elit adi, sed do eiusm tem incididunt ut. Lorem ips dolor sit.
               Lorem ipsum dolor sit amet, consectetur.'
           quantity='15'
           hours='195'
+          path='track/uiuxdesign'
         />
         <HomeCard
-          url='https://source.unsplash.com/random/'
+          url='/img/qa.png'
           title='Quality Assurance (QA)'
           description='Card description. Lorem ipsum dolor sit amet, consectetur elit adi, sed do eiusm tem incididunt ut. Lorem ips dolor sit.
               Lorem ipsum dolor sit amet, consectetur.'
@@ -244,4 +246,5 @@ export default function Home() {
             </div>
         </>
     );
+
 }

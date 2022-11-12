@@ -12,6 +12,11 @@
   letter-spacing: calculateRem(0.46px);
   cursor: pointer;
   border: none;
+  transition: all 0.5s ease;
+
+  &:hover{
+    background-color: $orange-500;
+  }
 }
 
 .checkbox {
