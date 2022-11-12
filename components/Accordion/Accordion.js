@@ -1,4 +1,5 @@
 import { Button } from '../Basics/Button';
+import { Checkbox } from '../Basics/Checkbox';
 import { TypeShield } from '../TypeShield/TypeShield';
 import styles from './Accordion.module.scss';
 
@@ -19,13 +20,8 @@ const Accordion = ({ content }) => {
           <div className={styles.itemGroup}>
             {element.courses?.map((course, index) => (
               <div className={styles.item} key={`${course.courseName}${index}`}>
-                {console.log(course)}
                 <div className={styles.groupWrapper}>
-                  <img
-                    src='/img/completed.svg'
-                    alt=''
-                    className={styles.icon}
-                  />
+                  <Checkbox courseName={course.courseName} />
                   <div className={styles.group1}>
                     <header className={styles.header}>
                       <p className={styles.header__title}>
