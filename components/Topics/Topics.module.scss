@@ -6,14 +6,15 @@
     background-color: #131313;
     padding: 1em 1em;
     margin: 2em 2em;
-    width: 420px;
+    width: 380px;
     line-height: 2em;
     border: 3px solid;
     border-image: linear-gradient(to right ,#FF3401, #FF5A23, #FF7823, #FFA000) 1;
 }
 
 .list_card li{
-    background:  url(../../public/seta.svg) no-repeat 7px 7px transparent;
+    background:  url(../../public/seta.svg) no-repeat 4px 7px transparent;
+    font-size: 14px;
     list-style: none;
     padding-left: 2.5rem;
     color: #FFF;
