@@ -5,10 +5,10 @@ export default function InputText (props){
     return(
         <div className={styles.campo_texto}>
             
-            <label htmlFor="user">{props.label}</label>
+            <label htmlFor={props.id}>{props.label}</label>
 
             <input
-                id="user"
+                id={props.id}
                 type={props.type}
                 placeholder={props.placeholder}
                 required={props.required}
