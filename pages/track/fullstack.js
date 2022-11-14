@@ -1,5 +1,8 @@
+import { useState } from 'react';
 import { Accordion } from '../../components/Accordion/Accordion';
 import { TrackHeader } from '../../components/TrackHeader/TrackHeader';
+import { GlossaryModal } from '../../components/CustomModal/GlossaryModal';
+import Head from 'next/head';
 
 const topics = [
   'Fundamentos de HTML, CSS e Javascript',
@@ -210,8 +213,29 @@ const content = [
 ];
 
 const FullStack = () => {
+  const [openContactModal, setOpenContactModal] = useState(false);
+
+  function openGlossaryModal() {
+    setOpenContactModal(true);
+  }
+
+  function closeGlossaryModal() {
+    setOpenContactModal(false);
+  }
+
+  function handleConfirmButton() {
+    closeModal();
+  }
+
+  function handleCancelButton() {
+    closeModal();
+  }
+
   return (
     <>
+      <Head>
+        <title>Trilha Full Stack - Orange Evolution</title>
+      </Head>
       <TrackHeader
         backgroundImageUrl='/img/fullstack_track.png'
         headerTitle='Desenvolvimento Full Stack'
@@ -220,7 +244,16 @@ const FullStack = () => {
         topics={topics}
       />
 
-      <Accordion content={content} />
+      <Accordion content={content} openGlossaryModal={openGlossaryModal} />
+
+      <GlossaryModal
+        isOpen={openContactModal}
+        requestClose={closeGlossaryModal}
+        title={'Excluir Contato'}
+        description={'Tem certeza que deseja excluir o contato?'}
+        cancelButtonFunction={handleCancelButton}
+        confirmButtonFunction={handleConfirmButton}
+      />
     </>
   );
 };

@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Home</title>
+        <title>Home - Orange Evolution</title>
       </Head>
 
       <header className={styles.header}>
