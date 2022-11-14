@@ -1,14 +1,17 @@
 import Head from 'next/head';
 import { HomeCard } from '../components/HomeCard/HomeCard';
+import Registration from '../components/Registration/Registration';
 import styles from '../styles/Home.module.scss';
+
 
 export default function Home() {
   return (
     <>
-      <Head>
+
+      <Registration />
+      {/*<Head>
         <title>Home</title>
       </Head>
-
 
       <header className={styles.header}>
         <h1 className={styles.title}>O que você gostaria de aprender hoje?</h1>
@@ -48,7 +51,7 @@ export default function Home() {
           hours='74'
           path='track/qualityassurance'
         />
-      </section>
+  </section>*/}
       
     </>
   );

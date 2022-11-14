@@ -1,0 +1,67 @@
+.container{
+    display: flex;
+} 
+
+.tela_1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    font-size: 36px;
+    width: 40%;
+}
+
+.tela_1 img{
+    height: 10rem;
+}
+
+.tela_1 p {
+    color: #FFF;
+    margin-top: 3rem;
+}
+
+.tela_1 p:nth-child(3){
+    color: #FF5A23;
+}
+
+.tela_2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #FFF;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    height: 100vh;
+    width: 60%;
+    padding: 3rem 12rem;
+    margin-left: 5rem;
+}
+
+.tela_2 img{
+    height: 10rem;
+}
+
+.tela_3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 500;
+}
+
+.tela_3 a{
+    align-self: flex-end;
+    color: #000;
+    font-size: 18px;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.tela_3 p{
+    font-size: 18px;
+    margin-top: 2rem;
+}
+
+.tela_3 a:nth-last-child(1){
+    color: #FF5923;
+}

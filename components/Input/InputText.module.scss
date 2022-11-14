@@ -1,5 +1,5 @@
 .campo_texto label{
-    color: #FF5A23;
+    color: #000;
     font-size: 22px;
     font-weight: 600;
     margin: .8rem 0;
@@ -12,6 +12,7 @@
     font-size: 400;
     border-radius: 5px;
     height: 2.5rem;
+    width: 100%;
 }
 
 .campo_texto input:focus{
