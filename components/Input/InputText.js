@@ -2,6 +2,10 @@ import styles from './InputText.module.scss'
 
 export default function InputText (props){
     
+    const entrada = (e) => {
+        props.dadosEntrada(e.target.value)
+    }
+
     return(
         <div className={styles.campo_texto}>
             
@@ -12,8 +16,8 @@ export default function InputText (props){
                 type={props.type}
                 placeholder={props.placeholder}
                 required={props.required}
-                //onChange={}
-                //value={} 
+                onChange={entrada}
+                value={props.value} 
             />
         </div>
     )
