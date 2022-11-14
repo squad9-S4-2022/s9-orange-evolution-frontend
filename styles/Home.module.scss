@@ -1,0 +1,28 @@
+@import './base';
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-block: calculateRem(180px) calculateRem(50px);
+}
+
+.title {
+  color: $orange-700;
+  font-size: calculateRem(32px);
+  line-height: calculateRem(38.73px);
+  font-weight: 700;
+}
+
+.description {
+  color: white;
+  font-size: calculateRem(14px);
+  line-height: calculateRem(20px);
+}
+
+.cardWrapper {
+  display: flex;
+  justify-content: center;
+  gap: calculateRem(22px);
+  margin: calculateRem(18px) calculateRem(24px);
+}

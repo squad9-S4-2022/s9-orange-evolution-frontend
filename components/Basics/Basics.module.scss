@@ -1,0 +1,25 @@
+@import '../../styles/base';
+
+.button {
+  width: calculateRem(106px);
+  height: calculateRem(40px);
+  background-color: $orange-500;
+  border-radius: calculateRem(5px);
+  color: white;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: calculateRem(19px);
+  letter-spacing: calculateRem(0.46px);
+  cursor: pointer;
+  border: none;
+  transition: all 0.5s ease;
+
+  &:hover{
+    background-color: $orange-500;
+  }
+}
+
+.checkbox {
+  display: flex;
+  align-items: flex-end;
+}

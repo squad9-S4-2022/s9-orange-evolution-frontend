@@ -1,98 +1,97 @@
 @import '../../styles/base';
 
-.navbar{
-    background-color: #131313;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.navbar {
+  background-color: $black-93;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  padding: calculateRem(23px) calculateRem(24px);
 }
 
-.logo_lista{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.logo_lista {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.img_logo{
-    padding: calculateRem(24px);
-}
-
-.link_itens{
-    display: flex;
-    list-style: none;
-    margin-left: calculateRem(120px);
+.link_itens {
+  display: flex;
+  list-style: none;
+  margin-left: calculateRem(100px);
 }
 
 .link_itens li {
-    padding-left: calculateRem(35px);
+  margin-right: calculateRem(20px);
 }
 
-.link_itens a{
-    color: #FFF;
-    text-decoration: none;
-    padding: calculateRem(5px);
-    transition: .3s;
-    border-bottom: 2px solid transparent;
+.link_itens a {
+  color: #fff;
+  text-decoration: none;
+  padding: calculateRem(5px);
+  transition: 0.3s;
+  border-bottom: calculateRem(2px) solid transparent;
 }
 
-.link_itens a:hover{
-    color: #FF5A23;
-    border-color: #FF5A23;
+.link_itens a:hover {
+  color: $orange-700;
+  border-color: $orange-700;
 }
 
-.container_right{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.container_right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
 }
 
-.form_class{
-    position: relative;
-    margin-right: 1.3em;
+.form_class {
+  position: relative;
 }
 
-.img_lupa{
-    height: calculateRem(15px);
-    position: absolute;
-    top: calculateRem(13px);
-    right: 20rem;
-    cursor: pointer;
+.img_lupa {
+  height: calculateRem(15px);
+  position: absolute;
+  top: calculateRem(13px);
+  right: calculateRem(320px);
+  cursor: pointer;
 }
 
-.form_input{
-    border-radius: 20px;
-    width: calculateRem(350px);
-    height: calculateRem(40px);
-    border: none ;
-    font-size: 12px;
+.form_input {
+  padding-left: calculateRem(40px);
+  border-radius: calculateRem(20px);
+  width: calculateRem(350px);
+  height: calculateRem(40px);
+  border: none;
+  font-size: calculateRem(12px);
 }
 
-.form_input::placeholder{
-    padding-left: 3em;
+.img_class {
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.25),
+      rgba(255, 255, 255, 0.25)
+    ),
+    linear-gradient(0deg, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.25)),
+    rgba(255, 255, 255, 0.25);
+  border-radius: 50%;
+  height: calculateRem(28px);
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
 }
 
-.img_class{
-    background: linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(0deg, #FFFFFF, #FFFFFF), #FFFFFF;
-    border-radius: 100%;
-    height: calculateRem(28px);
-    padding: 0.5em ;
-    display: flex;
-    align-items: center;
+.img_notificacao {
+  height: calculateRem(18px);
+  cursor: pointer;
 }
 
-.img_notificacao{
-    height: calculateRem(18px);
-    cursor: pointer;
+.img_user {
+  height: calculateRem(40px);
+  cursor: pointer;
 }
 
-.img_user{
-    width: calculateRem(55px);
-    height: calculateRem(55px);
-    margin-right: calculateRem(30px);
-    margin-left: 1em;
-    border-radius: 100%;
-    cursor: pointer;
+.form_input::placeholder {
+  padding-left: 3rem;
 }
-
-
-

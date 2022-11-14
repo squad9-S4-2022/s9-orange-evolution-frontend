@@ -3,24 +3,31 @@
 $gray-200: #d9d9d9;
 $gray-200-50: rgba(217, 217, 217, 0.5);
 $gray-400: #858585;
+$gray-800: #1C1D1E;
+
+$linear-gradient: linear-gradient(90deg, #FF5A23 0%, #FF3401 32.81%, #FF7823 68.23%, #FFA000 100%);
 
 $orange-300: #b69260;
-$orange-400: #d39a4a;
-$orange-500: #ffa629;
-$orange-500-50: rgba(255, 166, 41, 0.5);
+$orange-350: #d39a4a;
+$orange-400: #ffa629;
+$orange-400-50: rgba(255, 166, 41, 0.5);
+$orange-500: #ffa000;
+$orange-650: #ff5a23;
+$orange-700: #ff5a24;
 
-$green-500: #00df31;
+$green-500: #00C19C;
+$purple-500: #6E24DF;
+$pink-500: #F730BD;
+$yellow-500: #FF9F00;
 
-$purple-500: #9747ff;
-
-$blue-500: #3563e9;
-
-$red-500: #F24822;
-
+$white-40: rgba(255, 255, 255, 0.4);
+$white-60: rgba(255, 255, 255, 0.6);
 
 $black-40: rgba(0, 0, 0, 0.4);
 $black-60: rgba(0, 0, 0, 0.6);
 $black-80: rgba(0, 0, 0, 0.8);
+$black-92: #151515;
+$black-93: #131313;
 
 /* Media Queries */
 $breakpoints: (
