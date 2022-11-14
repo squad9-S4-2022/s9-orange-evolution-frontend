@@ -6,5 +6,16 @@
 }
 
 body {
-  width: 100vw;
+  background-color: #1c1d1e;
+}
+
+#__next {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+main {
+  flex: 1;
 }
