@@ -1,5 +1,6 @@
 .container{
     display: flex;
+    background-color: #121212;
 } 
 
 .tela_1{
@@ -34,12 +35,15 @@
     border-bottom-left-radius: 15px;
     height: 100vh;
     width: 60%;
-    padding: 3rem 12rem;
-    margin-left: 5rem;
+    padding: 3rem 4.5rem;
+    background-image: url(../../public/orangeLogo.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 5%;
+    background-size: 15rem;
 }
 
-.tela_2 img{
-    height: 10rem;
+.tela_2 form{
+    margin-top: 10rem;
 }
 
 .tela_senha{
@@ -56,6 +60,12 @@
     font-weight: 500;
 }
 
+.tela_3 input {
+    width: 10rem;
+    font-weight: bold;
+    color: #121212;
+}
+
 .tela_3 p{
     font-size: 18px;
     margin-top: 2rem;
@@ -63,4 +73,43 @@
 
 .tela_3 a:nth-last-child(1){
     color: #FF5923;
+}
+
+@media (max-width: 764px) {
+    
+    .tela_1{
+        display: none;
+    }
+
+    .tela_2{
+        background-color: #121212;
+        width: 100%;
+        margin: 1rem;
+        padding: .5rem 1.5rem;
+        border-radius: 0;
+        background-image: url(../../public/orangeWhite.svg);
+        background-repeat: no-repeat;
+        background-size: 10rem;
+    }
+
+    .tela_2 input{
+        background-color: #1C1D1E;
+        color: #FFF;
+
+    }
+
+    .tela_senha{
+        flex-direction: column;
+    }
+
+    .tela_3 input {
+        width: 10rem;
+        font-weight: bold;
+        color: #FFF;
+        background-color: #FF5923;
+    }
+
+    .tela_3 p{
+        color: #FFF;
+    }
 }

@@ -11,12 +11,20 @@
     font-size: 20px;
     font-size: 400;
     border-radius: 5px;
-    height: 2.5rem;
+    height: 3rem;
     width: 100%;
 }
 
 .campo_texto input:focus{
     border: 2px solid #FF5A23;;
     outline: 0;
+}
+
+@media (max-width: 764px){
+    .campo_texto label{
+        color: #FF5A23;
+        margin-top: 2.5rem;
+    }
+
 }
 
