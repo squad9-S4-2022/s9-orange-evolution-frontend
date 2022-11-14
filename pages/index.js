@@ -38,7 +38,7 @@ export default function Home() {
               Lorem ipsum dolor sit amet, consectetur.'
           quantity='15'
           hours='195'
-          path='track/uiuxdesign'
+          path='track/uxuidesign'
         />
         <HomeCard
           url='/img/qa.png'

@@ -1,6 +1,6 @@
 import styles from './Basics.module.scss';
 
-const Button = ({label, onClick, ...props}) => {
+const Button = ({label, onClick, width,...props}) => {
     return (
         <div>
 
@@ -9,6 +9,7 @@ const Button = ({label, onClick, ...props}) => {
                 type='button'
                 value={label}
                 onClick={onClick}
+                style={{width: `${width}`}}
                 {...props}
                 className={styles.button}
             />

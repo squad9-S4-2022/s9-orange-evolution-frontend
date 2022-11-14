@@ -1,7 +1,5 @@
-import styles from '../../styles/Tracks.module.scss';
 import { Accordion } from '../../components/Accordion/Accordion';
-import { Button } from '../../components/Basics/Button';
-import Topics from '../../components/Topics/Topics';
+import { TrackHeader } from '../../components/TrackHeader/TrackHeader';
 
 const topics = [
   'Fundamentos de HTML, CSS e Javascript',
@@ -214,43 +212,13 @@ const content = [
 const FullStack = () => {
   return (
     <>
-      <header className={styles.header}>
-        <div className={styles.header__titleContainer}>
-          <h1 className={styles.header__titleContainer_title}>
-            Desenvolvimento Full Stack
-          </h1>
-          <hr className={styles.header__titleContainer_divider} />
-        </div>
-        <Button label='Continuar os estudos' />
-      </header>
-
-      <div className={styles.description}>
-        <div className={styles.description__card}>
-          <img
-            src='/img/fullstack_description.png'
-            alt=''
-            srcset=''
-            className={styles.description__card_image}
-          />
-          <div className={styles.description__card_text}>
-            <p className={styles.description__card_title}>
-              Desenvolvimento Full Stack
-            </p>
-            <p className={styles.description__card_description}>
-              Card description. Lorem ipsum dolor sit amet, consectetur elit
-              adi, sed do eiusm tem incididunt ut. Lorem ips dolor sit. Card
-              description. Lorem ipsum dolor sit amet, consectetur elit adi, sed
-              do eiusm tem incididunt ut. Lorem ips dolor sit.
-            </p>
-            <div className={styles.progressBar}>
-              <label htmlFor='progressBar'>25% completo</label>
-              <progress id='progressBar' value='25' max='100' />
-            </div>
-          </div>
-        </div>
-
-        <Topics topics={topics} />
-      </div>
+      <TrackHeader
+        backgroundImageUrl='/img/fullstack_track.png'
+        headerTitle='Desenvolvimento Full Stack'
+        descriptionCardImageUrl='/img/fullstack_description.png'
+        completeness='25'
+        topics={topics}
+      />
 
       <Accordion content={content} />
     </>

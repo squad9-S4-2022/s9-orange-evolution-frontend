@@ -209,13 +209,14 @@ const content = [
   },
 ];
 
-const QualityAssurance = () => {
+const UxUiDesign = () => {
   return (
     <>
       <TrackHeader
         backgroundImageUrl='/img/fullstack_track.png'
-        headerTitle='Quality Assurance'
-        descriptionCardImageUrl='/img/fullstack_description.png' completeness='50'
+        headerTitle='UX/UI Design'
+        descriptionCardImageUrl='/img/fullstack_description.png'
+        completeness="58"
         topics={topics}
       />
 
@@ -224,4 +225,4 @@ const QualityAssurance = () => {
   );
 };
 
-export default QualityAssurance;
+export default UxUiDesign;
