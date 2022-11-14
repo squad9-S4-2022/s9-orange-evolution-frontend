@@ -1,5 +1,9 @@
 import { Accordion } from '../../components/Accordion/Accordion';
+import { GlossaryModal } from '../../components/CustomModal/GlossaryModal';
+import { RedirectionModal } from '../../components/CustomModal/RedirectionModal';
 import { TrackHeader } from '../../components/TrackHeader/TrackHeader';
+import { useState } from 'react';
+import Head from 'next/head';
 
 const topics = [
   'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
@@ -210,17 +214,50 @@ const content = [
 ];
 
 const UxUiDesign = () => {
+  const [openGlossaryModal, setOpenGlossaryModal] = useState(false);
+  const [openRedirectionModal, setOpenRedirectionModal] = useState(false);
+
+  function openGlossary() {
+    setOpenGlossaryModal(true);
+  }
+
+  function closeGlossary() {
+    setOpenGlossaryModal(false);
+  }
+
+  function openRedirection() {
+    setOpenRedirectionModal(true);
+  }
+
+  function closeRedirection() {
+    setOpenRedirectionModal(false);
+  }
+
   return (
     <>
+      <Head>
+        <title>Trilha UX/UI Design - Orange Evolution</title>
+      </Head>
       <TrackHeader
         backgroundImageUrl='/img/fullstack_track.png'
         headerTitle='UX/UI Design'
         descriptionCardImageUrl='/img/fullstack_description.png'
-        completeness="58"
+        completeness='58'
         topics={topics}
       />
 
-      <Accordion content={content} />
+      <Accordion
+        content={content}
+        openGlossaryModal={openGlossary}
+        openRedirectionModal={openRedirection}
+      />
+
+      <GlossaryModal isOpen={openGlossaryModal} requestClose={closeGlossary} />
+
+      <RedirectionModal
+        isOpen={openRedirectionModal}
+        requestClose={closeRedirection}
+      />
     </>
   );
 };

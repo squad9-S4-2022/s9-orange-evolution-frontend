@@ -27,7 +27,7 @@ const TrackHeader = ({backgroundImageUrl, headerTitle, descriptionCardImageUrl, 
           />
           <div className={styles.description__card_text}>
             <p className={styles.description__card_title}>
-              Desenvolvimento Full Stack
+              {headerTitle}
             </p>
             <p className={styles.description__card_description}>
               Card description. Lorem ipsum dolor sit amet, consectetur elit

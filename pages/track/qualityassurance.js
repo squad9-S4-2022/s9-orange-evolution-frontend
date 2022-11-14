@@ -1,5 +1,9 @@
 import { Accordion } from '../../components/Accordion/Accordion';
+import { GlossaryModal } from '../../components/CustomModal/GlossaryModal';
+import { RedirectionModal } from '../../components/CustomModal/RedirectionModal';
 import { TrackHeader } from '../../components/TrackHeader/TrackHeader';
+import { useState } from 'react';
+import Head from 'next/head';
 
 const topics = [
   'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
@@ -210,16 +214,49 @@ const content = [
 ];
 
 const QualityAssurance = () => {
+  const [openGlossaryModal, setOpenGlossaryModal] = useState(false);
+  const [openRedirectionModal, setOpenRedirectionModal] = useState(false);
+
+  function openGlossary() {
+    setOpenGlossaryModal(true);
+  }
+
+  function closeGlossary() {
+    setOpenGlossaryModal(false);
+  }
+
+  function openRedirection() {
+    setOpenRedirectionModal(true);
+  }
+
+  function closeRedirection() {
+    setOpenRedirectionModal(false);
+  }
   return (
     <>
+      <Head>
+        <title>Trilha Quality Assurance - Orange Evolution</title>
+      </Head>
       <TrackHeader
         backgroundImageUrl='/img/fullstack_track.png'
         headerTitle='Quality Assurance'
-        descriptionCardImageUrl='/img/fullstack_description.png' completeness='50'
+        descriptionCardImageUrl='/img/fullstack_description.png'
+        completeness='50'
         topics={topics}
       />
 
-      <Accordion content={content} />
+      <Accordion
+        content={content}
+        openGlossaryModal={openGlossary}
+        openRedirectionModal={openRedirection}
+      />
+
+      <GlossaryModal isOpen={openGlossaryModal} requestClose={closeGlossary} />
+
+      <RedirectionModal
+        isOpen={openRedirectionModal}
+        requestClose={closeRedirection}
+      />
     </>
   );
 };
