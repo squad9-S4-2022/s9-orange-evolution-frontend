@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Accordion } from '../../components/Accordion/Accordion';
 import { TrackHeader } from '../../components/TrackHeader/TrackHeader';
 import { GlossaryModal } from '../../components/CustomModal/GlossaryModal';
+import { RedirectionModal } from '../../components/CustomModal/RedirectionModal';
 import Head from 'next/head';
 
 const topics = [
@@ -213,22 +214,23 @@ const content = [
 ];
 
 const FullStack = () => {
-  const [openContactModal, setOpenContactModal] = useState(false);
+  const [openGlossaryModal, setOpenGlossaryModal] = useState(false);
+  const [openRedirectionModal, setOpenRedirectionModal] = useState(false);
 
-  function openGlossaryModal() {
-    setOpenContactModal(true);
+  function openGlossary() {
+    setOpenGlossaryModal(true);
   }
 
-  function closeGlossaryModal() {
-    setOpenContactModal(false);
+  function closeGlossary() {
+    setOpenGlossaryModal(false);
   }
 
-  function handleConfirmButton() {
-    closeModal();
+  function openRedirection() {
+    setOpenRedirectionModal(true);
   }
 
-  function handleCancelButton() {
-    closeModal();
+  function closeRedirection() {
+    setOpenRedirectionModal(false);
   }
 
   return (
@@ -244,15 +246,17 @@ const FullStack = () => {
         topics={topics}
       />
 
-      <Accordion content={content} openGlossaryModal={openGlossaryModal} />
+      <Accordion
+        content={content}
+        openGlossaryModal={openGlossary}
+        openRedirectionModal={openRedirection}
+      />
 
-      <GlossaryModal
-        isOpen={openContactModal}
-        requestClose={closeGlossaryModal}
-        title={'Excluir Contato'}
-        description={'Tem certeza que deseja excluir o contato?'}
-        cancelButtonFunction={handleCancelButton}
-        confirmButtonFunction={handleConfirmButton}
+      <GlossaryModal isOpen={openGlossaryModal} requestClose={closeGlossary} />
+
+      <RedirectionModal
+        isOpen={openRedirectionModal}
+        requestClose={closeRedirection}
       />
     </>
   );
