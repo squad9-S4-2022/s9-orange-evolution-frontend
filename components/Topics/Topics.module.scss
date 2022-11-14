@@ -3,16 +3,24 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #D9D9D9;
+    background-color: #131313;
     padding: 1em 1em;
     margin: 2em 2em;
-    width: 450px;
-    border-radius: 0.5em;
+    width: 380px;
     line-height: 2em;
+    border: 3px solid;
+    border-image: linear-gradient(to right ,#FF3401, #FF5A23, #FF7823, #FFA000) 1;
 }
 
-.list_card {
-    list-style-image: url(../../public/seta.svg);
+.list_card li{
+    background:  url(../../public/seta.svg) no-repeat 4px 7px transparent;
+    font-size: 14px;
+    list-style: none;
+    padding-left: 2.5rem;
+    color: #FFF;
 }
+
+
+
 
 
