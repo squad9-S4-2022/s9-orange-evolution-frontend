@@ -1,26 +1,23 @@
-.div_card{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: #131313;
-    padding: 1em 1em;
-    margin: 2em 2em;
-    width: 380px;
-    line-height: 2em;
-    border: 3px solid;
-    border-image: linear-gradient(to right ,#FF3401, #FF5A23, #FF7823, #FFA000) 1;
+@import '../../styles/base';
+
+.div_card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: $black-93;
+  padding: 1rem 1rem;
+  width: calculateRem(448px);
+  height: calculateRem(168px);
+  line-height: 2rem;
+  border: calculateRem(2px) solid;
+  border-image: linear-gradient(to right, #ff3401, #ff5a23, #ff7823, #ffa000) 1;
 }
 
-.list_card li{
-    background:  url(../../public/seta.svg) no-repeat 4px 7px transparent;
-    font-size: 14px;
-    list-style: none;
-    padding-left: 2.5rem;
-    color: #FFF;
+.list_card li {
+  background: url('/seta.svg') no-repeat calculateRem(4px) calculateRem(7px) transparent;
+  font-size: calculateRem(14px);
+  list-style: none;
+  padding-left: 2.5rem;
+  color: #fff;
 }
-
-
-
-
-

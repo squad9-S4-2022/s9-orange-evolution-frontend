@@ -3,7 +3,7 @@ import { Checkbox } from '../Basics/Checkbox';
 import { TypeShield } from '../TypeShield/TypeShield';
 import styles from './Accordion.module.scss';
 
-const Accordion = ({ content }) => {
+const Accordion = ({ content, openGlossaryModal, openRedirectionModal }) => {
   return (
     <div className={styles.wrapper}>
       {content.map((element, index) => (
@@ -36,13 +36,13 @@ const Accordion = ({ content }) => {
                     </div>
                   </div>
                   <div className={styles.group2}>
-                    <Button label='Glossário' />
+                    <Button label='Glossário' onClick={openGlossaryModal} />
                   </div>
                 </div>
 
                 <div className={styles.type_button}>
                   <TypeShield label={course.type} />
-                  <Button label='Iniciar' />
+                  <Button label='Iniciar' onClick={openRedirectionModal} />
                 </div>
               </div>
             ))}

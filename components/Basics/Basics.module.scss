@@ -3,7 +3,7 @@
 .button {
   width: calculateRem(106px);
   height: calculateRem(40px);
-  background-color: $orange-500;
+  background-color: $orange-650;
   border-radius: calculateRem(5px);
   color: white;
   font-weight: 500;
@@ -14,9 +14,15 @@
   border: none;
   transition: all 0.5s ease;
 
-  &:hover{
+  &:hover {
     background-color: $orange-500;
   }
+}
+
+.whiteBtn {
+  background-color: white;
+  color: black;
+  border: 1px solid $gray-200;
 }
 
 .checkbox {

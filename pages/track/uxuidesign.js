@@ -1,15 +1,15 @@
-import { useState } from 'react';
 import { Accordion } from '../../components/Accordion/Accordion';
-import { TrackHeader } from '../../components/TrackHeader/TrackHeader';
 import { GlossaryModal } from '../../components/CustomModal/GlossaryModal';
 import { RedirectionModal } from '../../components/CustomModal/RedirectionModal';
+import { TrackHeader } from '../../components/TrackHeader/TrackHeader';
+import { useState } from 'react';
 import Head from 'next/head';
 
 const topics = [
-  'Fundamentos de HTML, CSS e Javascript',
-  'Introdução a Bancos de Dados e Linguagem SQL',
-  'Git e Github para iniciantes',
-  'Qual é a diferença entre HTTP e HTTPS?',
+  'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+  'Cras efficitur purus ut elementum vulputate.',
+  'Etiam sollicitudin dolor diam, at dignissim mi sollicitudin.',
+  'Sed egestas condimentum efficitur.',
 ];
 
 const content = [
@@ -213,7 +213,7 @@ const content = [
   },
 ];
 
-const FullStack = () => {
+const UxUiDesign = () => {
   const [openGlossaryModal, setOpenGlossaryModal] = useState(false);
   const [openRedirectionModal, setOpenRedirectionModal] = useState(false);
 
@@ -236,13 +236,13 @@ const FullStack = () => {
   return (
     <>
       <Head>
-        <title>Trilha Full Stack - Orange Evolution</title>
+        <title>Trilha UX/UI Design - Orange Evolution</title>
       </Head>
       <TrackHeader
         backgroundImageUrl='/img/fullstack_track.png'
-        headerTitle='Desenvolvimento Full Stack'
+        headerTitle='UX/UI Design'
         descriptionCardImageUrl='/img/fullstack_description.png'
-        completeness='25'
+        completeness='58'
         topics={topics}
       />
 
@@ -262,4 +262,4 @@ const FullStack = () => {
   );
 };
 
-export default FullStack;
+export default UxUiDesign;
