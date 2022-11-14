@@ -1,0 +1,90 @@
+@import './base';
+
+.header {
+  width: 100%;
+  height: calculateRem(160px);
+  background-color: $black-92;
+  background-image: url('/img/fullstack_track.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: calculateRem(24px);
+
+  &__titleContainer {
+    &_title {
+      color: $orange-650;
+    }
+
+    &_divider {
+      width: calculateRem(696px);
+      height: 1px;
+      color: $orange-650;
+    }
+  }
+}
+
+.description {
+  display: flex;
+  justify-content: space-between;
+  padding: calculateRem(16px) calculateRem(24px);
+  background-color: $black-93;
+
+  &__card {
+    display: flex;
+    gap: 1rem;
+
+    &_text {
+      width: calculateRem(401px);
+      display: flex;
+      flex-direction: column;
+      gap: calculateRem(24px);
+    }
+
+    &_title {
+      font-weight: 600;
+      line-height: calculateRem(24px);
+      color: $orange-650;
+    }
+
+    &_description {
+      font-size: calculateRem(14px);
+      color: #fff;
+    }
+  }
+}
+
+.progressBar {
+  display: flex;
+  gap: calculateRem(4px);
+  align-items: center;
+
+  label {
+    color: white;
+    font-size: calculateRem(10px);
+    line-height: calculateRem(20px);
+    font-weight: 600;
+  }
+
+  progress {
+    background-color: #fff;
+    height: 5px;
+    border: none;
+    width: calculateRem(313px);
+    -webkit-appearance: none; /* Needed for WebKit/Blink */
+
+    &::-moz-progress-bar {
+      background-color: $orange-650;
+    }
+
+    &::-webkit-progress-bar {
+      background-color: #fff;
+    }
+
+    &::-webkit-progress-value {
+      background-color: $orange-650;
+    }
+  }
+}
