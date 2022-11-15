@@ -214,7 +214,7 @@ const content = [
 ];
 
 const FullStack = () => {
-  const [openGlossaryModal, setOpenGlossaryModal] = useState(false);
+  const [openGlossaryModal, setOpenGlossaryModal] = useState(true);
   const [openRedirectionModal, setOpenRedirectionModal] = useState(false);
 
   function openGlossary() {

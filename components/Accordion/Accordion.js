@@ -12,7 +12,7 @@ const Accordion = ({
   openEditGlossaryModal,
   openEditModal
 }) => {
-  const [isAdmin, setIsAdmin] = useState(true);
+  const [isAdmin, setIsAdmin] = useState(false);
 
   return (
     <div className={styles.wrapper}>

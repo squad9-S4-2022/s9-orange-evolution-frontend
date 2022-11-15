@@ -43,13 +43,14 @@ const RedirectionModal = ({ isOpen, requestClose, width, style, ...props }) => {
         <div className={styles.modal__redirect_buttonControl}>
           <Button
             label='Voltar para a trilha'
-            width='13.063rem'
+            width='9.406rem'
             onClick={requestClose}
             white
           />
           <Button
             label='Acessar conteúdo'
-            width='13.063rem'
+            width='9.406rem'
+            bgcolor='#FFA82E'
             onClick={requestClose}
           />
         </div>
