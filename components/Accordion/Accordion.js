@@ -21,30 +21,63 @@ const Accordion = ({ content, openGlossaryModal, openRedirectionModal }) => {
             {element.courses?.map((course, index) => (
               <div className={styles.item} key={`${course.courseName}${index}`}>
                 <div className={styles.groupWrapper}>
-                  <Checkbox courseName={course.courseName} />
-                  <div className={styles.group1}>
-                    <header className={styles.header}>
-                      <p className={styles.header__title}>
-                        {course.courseName}
-                      </p>
-                      <p className={styles.header__subtitle}>
-                        - Tempo estimado: {course.estimatedTime}.
-                      </p>
-                    </header>
-                    <div className={styles.topics}>
-                      <p>Assunto abordado: {course.coveredTopics}</p>
-                    </div>
+                  {/* <div className={styles.checkboxDesktop}>
+                    
+                  </div> */}
+                  <div className={styles.header}>
+                    <Checkbox courseName={course.courseName} />
+                    <p className={styles.header__title}>{course.courseName}</p>
+                    <p className={styles.header__subtitle}>
+                      - Tempo estimado: {course.estimatedTime}.
+                    </p>
                   </div>
-                  <div className={styles.group2}>
-                    <Button label='Glossário' onClick={openGlossaryModal} />
+                  <div className={styles.topics}>
+                    <p>Assunto abordado: {course.coveredTopics}</p>
                   </div>
-                </div>
 
-                <div className={styles.type_button}>
-                  <TypeShield label={course.type} />
-                  <Button label='Iniciar' onClick={openRedirectionModal} />
+                  <div className={styles.buttonControl}>
+                    <Button label='Glossário' onClick={openGlossaryModal} />
+                    <TypeShield label={course.type} />
+                    <Button label='Iniciar' onClick={openRedirectionModal} />
+                  </div>
                 </div>
               </div>
+              // <div className={styles.item} key={`${course.courseName}${index}`}>
+              //   <div className={styles.groupWrapper}>
+              //     <div className={styles.checkboxDesktop}>
+              //       <Checkbox courseName={course.courseName} />
+              //     </div>
+              //     <div className={styles.group1}>
+              //       <div className={styles.checkboxMobile}>
+              //         <Checkbox courseName={course.courseName} />
+              //       </div>
+              //       <div>
+              //         <header className={styles.header}>
+              //           <p className={styles.header__title}>
+              //             {course.courseName}
+              //           </p>
+              //           <p className={styles.header__subtitle}>
+              //             - Tempo estimado: {course.estimatedTime}.
+              //           </p>
+              //         </header>
+              //         <div className={styles.topics}>
+              //           <p>Assunto abordado: {course.coveredTopics}</p>
+              //         </div>
+              //       </div>
+              //     </div>
+              //     <div className={styles.group2}>
+              //       <Button label='Glossário' onClick={openGlossaryModal} />
+              //     </div>
+              //   </div>
+
+              //   <div className={styles.type_button}>
+              //     <div className={styles.group2mobile}>
+              //       <Button label='Glossário' onClick={openGlossaryModal} />
+              //     </div>
+              //     <TypeShield label={course.type} />
+              //     <Button label='Iniciar' onClick={openRedirectionModal} />
+              //   </div>
+              // </div>
             ))}
           </div>
         </details>

@@ -7,7 +7,7 @@
   padding-block: calculateRem(180px) calculateRem(50px);
 
   @include device(mobile) {
-    padding-block: calculateRem(48px);
+    padding-block: calculateRem(48px) calculateRem(28px);
   }
 }
 
@@ -17,8 +17,9 @@
   line-height: calculateRem(38.73px);
   font-weight: 700;
   text-align: center;
+  margin-bottom: calculateRem(13px);
 
-  @include device(mobile){
+  @include device(mobile) {
     font-size: calculateRem(20px);
     line-height: calculateRem(24.4px);
   }
@@ -28,17 +29,26 @@
   color: white;
   font-size: calculateRem(14px);
   line-height: calculateRem(20px);
+  text-align: center;
+  width: calculateRem(826px);
+
+  @include device(mobile){
+    width: calculateRem(343px)
+
+  }
+
 }
 
 .cardWrapper {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: calculateRem(22px);
   margin: calculateRem(18px) calculateRem(24px);
 
   @include device(mobile) {
     flex-direction: column;
 
-    margin-inline: calculateRem(16px);
+    margin-inline: 0;
   }
 }

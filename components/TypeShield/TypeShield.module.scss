@@ -8,6 +8,14 @@
   align-items: center;
   justify-content: center;
   border-radius: calculateRem(5px);
+
+  @include device(mobile){
+    font-size: calculateRem(12px);
+    line-height: calculateRem(14.52px);
+    width: calculateRem(96px);
+    height: calculateRem(30px)
+
+  }
 }
 
 .artigo {

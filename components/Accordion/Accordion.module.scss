@@ -25,6 +25,10 @@
     calculateRem(55px);
   border: 1px solid;
   border-image: $linear-gradient 1;
+
+  @include device(mobile) {
+    padding: 0;
+  }
 }
 
 .summary {
@@ -39,6 +43,10 @@
   padding: calculateRem(10px) calculateRem(47px) calculateRem(16px);
   font-weight: 700;
 
+  @include device(mobile) {
+    padding-inline: calculateRem(39px) calculateRem(24px);
+  }
+
   &__icon {
     rotate: 0deg;
     transition: rotate 0.2s linear;
@@ -46,16 +54,30 @@
       brightness(101%) contrast(101%);
   }
 }
+.itemGroup {
+  padding: 0;
+  margin: 0;
+}
 
 .group1 {
   margin-left: calculateRem(153px);
+
+  @include device(mobile) {
+    margin-left: 0;
+    display: flex;
+  }
 }
 
 .title {
   display: flex;
   align-items: center;
+  justify-content: space-around;
   gap: calculateRem(174px);
   color: $orange-650;
+
+  @include device(mobile) {
+    gap: 50px;
+  }
 
   &__index {
     font-size: calculateRem(40px);
@@ -66,13 +88,50 @@
   &__name {
     font-size: calculateRem(24px);
     line-height: calculateRem(29.05px);
+
+    @include device(mobile) {
+      font-size: calculateRem(16px);
+      line-height: calculateRem(19.36px);
+    }
   }
 }
 
 .groupWrapper {
+  padding-inline: 0;
   display: flex;
   gap: calculateRem(24px);
-  align-items: end;
+  align-items: flex-end;
+
+  @include device(mobile) {
+    flex-direction: column;
+    align-items: center;
+    gap: calculateRem(20px);
+    width: 100%;
+    padding: calculateRem(31px) calculateRem(17px) calculateRem(28px)
+      calculateRem(15px);
+  }
+}
+
+.buttonControl {
+  padding: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  // gap: calculateRem(27px);
+}
+
+.checkboxDesktop {
+  display: block;
+  @include device(mobile) {
+    display: none;
+  }
+}
+
+.checkboxMobile {
+  display: none;
+  @include device(mobile) {
+    display: block;
+  }
 }
 
 .icon {
@@ -84,19 +143,28 @@
 .header {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: calculateRem(10px);
   font-weight: 600;
   line-height: calculateRem(24px);
+  width: 100%;
 
   &__title {
     font-size: calculateRem(18px);
-    color: $white-60;
-    margin-bottom: calculateRem(8px);
+    color: white;
+
+    @include device(mobile) {
+      font-size: calculateRem(16px);
+    }
   }
 
   &__subtitle {
     font-size: calculateRem(10px);
     color: $white-40;
+
+    @include device(mobile) {
+      font-size: calculateRem(8px);
+    }
   }
 }
 
@@ -106,7 +174,10 @@
 }
 
 .topics {
+  width: 100%;
   display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: $gray-200;
   height: calculateRem(40px);
   padding: calculateRem(14px) calculateRem(43.5px);
@@ -114,10 +185,34 @@
   border-radius: calculateRem(5px);
   font-size: calculateRem(10px);
   line-height: calculateRem(12.1px);
+
+  @include device(mobile) {
+    height: calculateRem(40px);
+    padding: calculateRem(10px) 0;
+  }
 }
 
 .type_button {
   display: flex;
   align-self: flex-end;
   gap: calculateRem(106px);
+
+  @include device(mobile) {
+    gap: 0;
+  }
+}
+
+.group2 {
+  display: block;
+
+  @include device(mobile) {
+    display: none;
+  }
+}
+.group2mobile {
+  display: none;
+
+  @include device(mobile) {
+    display: block;
+  }
 }

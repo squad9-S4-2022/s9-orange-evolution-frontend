@@ -34,6 +34,7 @@
 
     &_afterOpen {
       opacity: 1;
+      z-index: 99;
     }
 
     &_beforeClose {
@@ -129,6 +130,7 @@
 
     &_afterOpen {
       opacity: 1;
+      z-index: 99;
     }
 
     &_beforeClose {

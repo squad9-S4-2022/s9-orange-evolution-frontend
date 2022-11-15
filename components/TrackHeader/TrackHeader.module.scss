@@ -15,12 +15,20 @@
   &__titleContainer {
     &_title {
       color: $orange-650;
+      
+      @include device(mobile){
+        font-size: calculateRem(20px);
+      }
     }
 
     &_divider {
       width: calculateRem(696px);
       height: 1px;
       color: $orange-650;
+
+      @include device(mobile) {
+        width: calculateRem(327px);
+      }
     }
   }
 }
@@ -31,9 +39,22 @@
   padding: calculateRem(16px) calculateRem(24px);
   background-color: $black-93;
 
+  @include device(mobile) {
+    flex-direction: column;
+    gap: 10px;
+  }
+
   &__card {
     display: flex;
     gap: 1rem;
+
+    &_image {
+      @include device(mobile) {
+        width: calculateRem(118px);
+        object-fit: cover;
+        border-radius: calculateRem(10px);
+      }
+    }
 
     &_text {
       width: calculateRem(401px);
@@ -65,6 +86,10 @@
     font-size: calculateRem(10px);
     line-height: calculateRem(20px);
     font-weight: 600;
+
+    @include device(mobile) {
+      font-size: calculateRem(8px);
+    }
   }
 
   progress {
@@ -73,6 +98,10 @@
     border: none;
     width: calculateRem(313px);
     -webkit-appearance: none; /* Needed for WebKit/Blink */
+
+    @include device(mobile) {
+      width: calculateRem(148px);
+    }
 
     &::-moz-progress-bar {
       background-color: $orange-650;
@@ -85,5 +114,11 @@
     &::-webkit-progress-value {
       background-color: $orange-650;
     }
+  }
+}
+
+.buttonControl {
+  @include device(mobile) {
+    display: none;
   }
 }
