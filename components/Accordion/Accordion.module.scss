@@ -47,6 +47,10 @@
   }
 }
 
+.group1 {
+  margin-left: calculateRem(153px);
+}
+
 .title {
   display: flex;
   align-items: center;

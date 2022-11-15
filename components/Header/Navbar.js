@@ -12,10 +12,10 @@ export default function Navbar() {
         />
         <ul className={styles.link_itens}>
           <li>
-            <Link href='/'>Trilhas</Link>
+            <Link href='/home'>Home</Link>
           </li>
           <li>
-            <Link href='/glossario'>Glossário</Link>
+            <Link href='/minhastrilhas'>Minhas Trilhas</Link>
           </li>
           <li>
             <Link href='/sobre'>Sobre</Link>
