@@ -1,0 +1,33 @@
+@import './base';
+
+.wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  padding-block: calculateRem(88px) calculateRem(60px);
+  gap: calculateRem(48px);
+}
+
+.bg {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+  z-index: -1;
+}
+
+.image {
+  height: calculateRem(400px);
+  width: calculateRem(432.07px);
+}
+
+.text {
+  font-weight: 700;
+  font-size: calculateRem(48px);
+  line-height: calculateRem(58.09px);
+  color: #fff;
+}

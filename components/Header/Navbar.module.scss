@@ -8,6 +8,7 @@
   position: sticky;
   top: 0;
   padding: calculateRem(23px) calculateRem(24px);
+  z-index: 10;
 }
 
 .logo_lista {
