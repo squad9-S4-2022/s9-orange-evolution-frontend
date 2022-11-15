@@ -1,18 +1,23 @@
-.div_card{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: #D9D9D9;
-    padding: 1em 1em;
-    margin: 2em 2em;
-    width: 450px;
-    border-radius: 0.5em;
-    line-height: 2em;
+@import '../../styles/base';
+
+.div_card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: $black-93;
+  padding: 1rem 1rem;
+  width: calculateRem(448px);
+  height: calculateRem(168px);
+  line-height: 2rem;
+  border: calculateRem(2px) solid;
+  border-image: linear-gradient(to right, #ff3401, #ff5a23, #ff7823, #ffa000) 1;
 }
 
-.list_card {
-    list-style-image: url(../../public/seta.svg);
+.list_card li {
+  background: url('/seta.svg') no-repeat calculateRem(4px) calculateRem(7px) transparent;
+  font-size: calculateRem(14px);
+  list-style: none;
+  padding-left: 2.5rem;
+  color: #fff;
 }
-
-

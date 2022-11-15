@@ -1,0 +1,123 @@
+@import '../../styles/base';
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.details {
+  width: 100%;
+  background-color: $gray-800;
+  display: block;
+  border: 1px solid;
+  border-image: $linear-gradient 1;
+
+  &[open] .summary__icon {
+    rotate: 90deg;
+  }
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  padding: calculateRem(18px) calculateRem(24px) calculateRem(18px)
+    calculateRem(55px);
+  border: 1px solid;
+  border-image: $linear-gradient 1;
+}
+
+.summary {
+  padding-block: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $black-93;
+  position: relative;
+  cursor: pointer;
+  width: 100%;
+  padding: calculateRem(10px) calculateRem(47px) calculateRem(16px);
+  font-weight: 700;
+
+  &__icon {
+    rotate: 0deg;
+    transition: rotate 0.2s linear;
+    filter: invert(43%) sepia(39%) saturate(3500%) hue-rotate(346deg)
+      brightness(101%) contrast(101%);
+  }
+}
+
+.group1 {
+  margin-left: calculateRem(153px);
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  gap: calculateRem(174px);
+  color: $orange-650;
+
+  &__index {
+    font-size: calculateRem(40px);
+    line-height: calculateRem(48.41px);
+    min-width: calculateRem(54px);
+  }
+
+  &__name {
+    font-size: calculateRem(24px);
+    line-height: calculateRem(29.05px);
+  }
+}
+
+.groupWrapper {
+  display: flex;
+  gap: calculateRem(24px);
+  align-items: end;
+}
+
+.icon {
+  width: calculateRem(32px);
+  margin-right: calculateRem(157px);
+  align-self: center;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: calculateRem(10px);
+  font-weight: 600;
+  line-height: calculateRem(24px);
+
+  &__title {
+    font-size: calculateRem(18px);
+    color: $white-60;
+    margin-bottom: calculateRem(8px);
+  }
+
+  &__subtitle {
+    font-size: calculateRem(10px);
+    color: $white-40;
+  }
+}
+
+.group2 {
+  display: flex;
+  align-items: flex-end;
+}
+
+.topics {
+  display: flex;
+  background-color: $gray-200;
+  height: calculateRem(40px);
+  padding: calculateRem(14px) calculateRem(43.5px);
+  color: $black-60;
+  border-radius: calculateRem(5px);
+  font-size: calculateRem(10px);
+  line-height: calculateRem(12.1px);
+}
+
+.type_button {
+  display: flex;
+  align-self: flex-end;
+  gap: calculateRem(106px);
+}
