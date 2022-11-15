@@ -1,14 +1,18 @@
 import styles from './TrackHeader.module.scss';
 import { Button } from '../Basics/Button';
 import Topics from '../Topics/Topics';
+import { useState } from 'react';
 
 const TrackHeader = ({
   backgroundImageUrl,
   headerTitle,
   descriptionCardImageUrl,
+  description,
   completeness,
   topics,
+  openAddNewContentModal,
 }) => {
+  const [isAdmin, setIsAdmin] = useState(false);
   return (
     <>
       <header
@@ -19,7 +23,11 @@ const TrackHeader = ({
           <hr className={styles.header__titleContainer_divider} />
         </div>
         <div className={styles.buttonControl}>
-          <Button label='Continuar os estudos' width='13.25rem' />
+          <Button
+            label={isAdmin ? 'Editar Trilha' : 'Continuar os estudos'}
+            width='13.25rem'
+            onClick={isAdmin ? openAddNewContentModal : null}
+          />
         </div>
       </header>
 

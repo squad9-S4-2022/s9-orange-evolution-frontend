@@ -205,3 +205,18 @@
   display: flex;
   justify-content: space-between;
 }
+
+.trashbin{
+  cursor: pointer;
+}
+
+.glossaryControl{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.editButton{
+  width: calculateRem(20px);
+  cursor: pointer
+}
