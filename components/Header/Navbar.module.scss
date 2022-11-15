@@ -88,6 +88,87 @@
   align-items: center;
   justify-content: center;
   gap: 1rem;
+  position: relative;
+}
+
+.profileMenu {
+  position: absolute;
+  background: #303133;
+  box-shadow: 0px 4px 4px 0px #00000040;
+  top: calculateRem(64px);
+  right: calculateRem(10px);
+  border-radius: calculateRem(16px);
+
+  @include device(mobile) {
+    top: calculateRem(78px);
+    right: calculateRem(5px);
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: calculateRem(24px) calculateRem(30px) calculateRem(12px)
+      calculateRem(12px);
+    gap: calculateRem(10px);
+  }
+
+  &__avatar {
+    height: calculateRem(60px);
+  }
+
+  &__name {
+    color: white;
+    font-weight: 500;
+    font-size: calculateRem(20px);
+    line-height: calculateRem(24.2px);
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: calculateRem(110px);
+  }
+
+  &__links {
+    background-color: $black-93;
+    width: calculateRem(190px);
+    margin-inline: calculateRem(20px);
+    margin-bottom: calculateRem(24px);
+    border-radius: calculateRem(10px);
+
+    & > ul {
+      list-style: none;
+    }
+
+    &_item {
+      display: flex;
+      justify-content: space-between;
+      padding: calculateRem(10px) calculateRem(16px);
+      &:not(:last-of-type) {
+        border-bottom: 1px solid white;
+      }
+    }
+
+    &_link {
+      color: white;
+      text-decoration: none;
+    }
+  }
+}
+
+.mobileSearch {
+  display: none;
+
+  @include device(mobile) {
+    background-color: #f7f7f7;
+    width: calculateRem(24px);
+    height: calculateRem(24px);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
 }
 
 .form_class {
@@ -124,10 +205,17 @@
     linear-gradient(0deg, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.25)),
     rgba(255, 255, 255, 0.25);
   border-radius: 50%;
+  width: calculateRem(28px);
   height: calculateRem(28px);
-  padding: 0.5rem;
   display: flex;
   align-items: center;
+  justify-content: center;
+
+  @include device(mobile) {
+    background-color: #f7f7f7;
+    width: calculateRem(24px);
+    height: calculateRem(24px);
+  }
 }
 
 .img_notificacao {
