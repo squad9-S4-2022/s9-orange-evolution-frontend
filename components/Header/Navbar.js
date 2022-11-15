@@ -1,7 +1,10 @@
 import Link from 'next/link';
+import { useState } from 'react';
 import styles from './Navbar.module.scss';
 
+
 export default function Navbar() {
+  const [showMobileMenu, setShowMobileMenu] = useState(true)
   return (
     <nav className={styles.navbar}>
       <div className={styles.logo_lista}>
@@ -10,6 +13,25 @@ export default function Navbar() {
           alt='Logo da Orange Juice'
           className={styles.img_logo}
         />
+
+        <img src='/img/hamburger-menu.svg' alt="Menu" className={styles.mobileMenu} onClick={() => setShowMobileMenu(!showMobileMenu)}/>
+
+        <div className={styles.mobileMenu__links} style={!showMobileMenu ? {display: 'none'} : {display: 'block'}}>
+          <ul>
+            <li>
+              <Link href="/home">Trilhas</Link>
+            </li>
+            <li>
+              <Link href="/minhastilhas">Minhas Trilhas</Link>
+            </li>
+            <li>
+              <Link href="/sobre">Sobre</Link>
+            </li>
+            <li>
+              <Link href="/duvidas">Dúvidas</Link>
+            </li>
+          </ul>
+        </div>
         <ul className={styles.link_itens}>
           <li>
             <Link href='/home'>Home</Link>
