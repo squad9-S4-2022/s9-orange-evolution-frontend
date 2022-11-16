@@ -1,4 +1,5 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import { useCoursesContext } from '../../context/CourseAPI';
 import { Button } from '../Basics/Button';
 import { Checkbox } from '../Basics/Checkbox';
 import { TypeShield } from '../TypeShield/TypeShield';
@@ -12,7 +13,18 @@ const Accordion = ({
   openEditGlossaryModal,
   openEditModal
 }) => {
-  const [isAdmin, setIsAdmin] = useState(false);
+  const [isAdmin, setIsAdmin] = useState(true);
+  const [loading, setLoading] = useState(false);
+  const [tracksData, setTracksData] = useState();
+  const { getTracksData } = useCoursesContext();
+
+  useEffect(() => {
+    setLoading(false);
+    setLoading(true);
+    getTracksData().then(res => setTracksData(res));
+    setLoading(false);
+  }, [getTracksData]);
+
 
   return (
     <div className={styles.wrapper}>

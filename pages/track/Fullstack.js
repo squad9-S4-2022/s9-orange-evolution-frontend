@@ -262,6 +262,7 @@ const FullStack = () => {
         backgroundImageUrl='/img/fullstack_track.png'
         headerTitle='Desenvolvimento Full Stack'
         descriptionCardImageUrl='/img/fullstack_description.png'
+        openEditModal={openEditContent}
         completeness='25'
         topics={topics}
       />
