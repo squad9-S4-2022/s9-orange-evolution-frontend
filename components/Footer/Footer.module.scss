@@ -1,0 +1,55 @@
+@import '../../styles/base';
+
+.container {
+  background-color: #303133;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+
+  @include device(mobile) {
+    display: none;
+  }
+}
+
+.footer_left {
+  display: flex;
+  align-items: center;
+  margin-left: 1.5rem;
+}
+
+.list_img {
+  display: flex;
+  align-items: center;
+  margin-left: 7rem;
+  list-style: none;
+}
+
+.list_img li {
+  padding-left: 3rem;
+}
+
+.footer_rigth {
+  padding-right: 1rem;
+}
+
+.list_link {
+  display: flex;
+  list-style: none;
+}
+
+.list_link li {
+  font-size: 14px;
+  font-weight: 500;
+  padding-right: 2rem;
+}
+
+.list_link a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.4s;
+}
+
+.list_link a:hover {
+  color: #ffa629;
+}

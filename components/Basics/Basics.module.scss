@@ -1,0 +1,37 @@
+@import '../../styles/base';
+
+.button {
+  width: calculateRem(106px);
+  height: calculateRem(40px);
+  background-color: $orange-650;
+  border-radius: calculateRem(5px);
+  color: black;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: calculateRem(19px);
+  letter-spacing: calculateRem(0.46px);
+  cursor: pointer;
+  border: none;
+  transition: all 0.5s ease;
+
+  &:hover {
+    background-color: $orange-500;
+  }
+
+  @include device(mobile) {
+    font-size: calculateRem(12px);
+    width: calculateRem(96px);
+    height: calculateRem(30px);
+  }
+}
+
+.whiteBtn {
+  background-color: white;
+  color: black;
+  border: 1px solid $gray-200;
+}
+
+.checkbox {
+  display: flex;
+  align-items: flex-end;
+}

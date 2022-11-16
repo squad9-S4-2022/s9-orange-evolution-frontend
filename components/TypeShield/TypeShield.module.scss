@@ -1,0 +1,39 @@
+@import '../../styles/base';
+
+.shield {
+  width: calculateRem(106px);
+  height: calculateRem(40px);
+  border: 2px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: calculateRem(5px);
+
+  @include device(mobile){
+    font-size: calculateRem(12px);
+    line-height: calculateRem(14.52px);
+    width: calculateRem(96px);
+    height: calculateRem(30px)
+
+  }
+}
+
+.artigo {
+  border-color: $green-500;
+  color: $green-500;
+}
+
+.video {
+  border-color: $purple-500;
+  color: $purple-500;
+}
+
+.podcast {
+  border-color: $pink-500;
+  color: $pink-500;
+}
+
+.curso {
+  border-color: $yellow-500;
+  color: $yellow-500;
+}

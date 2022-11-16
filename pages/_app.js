@@ -1,7 +1,15 @@
-import '../styles/globals.css'
+import '../styles/globals.css';
+import Layout from '../components/Layout/layout';
+import { CoursesProvider } from '../context/CourseAPI';
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  return (
+    <CoursesProvider>
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </CoursesProvider>
+  );
 }
 
-export default MyApp
+export default MyApp;

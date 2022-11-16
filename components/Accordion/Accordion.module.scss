@@ -1,0 +1,222 @@
+@import '../../styles/base';
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.details {
+  width: 100%;
+  background-color: $gray-800;
+  display: block;
+  border: 1px solid;
+  border-image: $linear-gradient 1;
+
+  &[open] .summary__icon {
+    rotate: 90deg;
+  }
+}
+
+.summary {
+  padding-block: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $black-93;
+  position: relative;
+  cursor: pointer;
+  width: 100%;
+  padding: calculateRem(10px) calculateRem(47px) calculateRem(16px);
+  font-weight: 700;
+
+  @include device(mobile) {
+    padding-inline: calculateRem(39px) calculateRem(24px);
+  }
+
+  &__icon {
+    rotate: 0deg;
+    transition: rotate 0.2s linear;
+    filter: invert(43%) sepia(39%) saturate(3500%) hue-rotate(346deg)
+      brightness(101%) contrast(101%);
+  }
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: calculateRem(174px);
+  color: $orange-650;
+
+  @include device(mobile) {
+    gap: 50px;
+  }
+
+  &__index {
+    font-size: calculateRem(40px);
+    line-height: calculateRem(48.41px);
+    min-width: calculateRem(54px);
+  }
+
+  &__name {
+    font-size: calculateRem(24px);
+    line-height: calculateRem(29.05px);
+
+    @include device(mobile) {
+      font-size: calculateRem(16px);
+      line-height: calculateRem(19.36px);
+    }
+  }
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  padding: calculateRem(18px) calculateRem(24px) calculateRem(18px)
+    calculateRem(55px);
+  border: 1px solid;
+  border-image: $linear-gradient 1;
+
+  @include device(mobile) {
+    padding: 0;
+  }
+}
+
+.groupWrapper {
+  padding-inline: 0;
+  display: flex;
+  gap: calculateRem(24px);
+  align-items: flex-end;
+
+  @include device(mobile) {
+    display: none;
+  }
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  margin-left: calculateRem(150px);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  color: #f7f7f7;
+  gap: calculateRem(10px);
+  line-height: calculateRem(24px);
+
+  &__title {
+    font-weight: 600;
+    font-size: calculateRem(18px);
+  }
+
+  &__subtitle {
+    font-weight: 400;
+    font-size: calculateRem(10px);
+  }
+}
+
+.topics {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: calculateRem(322px);
+  height: calculateRem(40px);
+  background: linear-gradient(180deg, #e2e5e9 90.58%, #d2d6db 100%);
+  border-radius: calculateRem(5px);
+  font-weight: 400;
+  font-size: calculateRem(10px);
+  line-height: calculateRem(12px);
+
+  & span {
+    font-weight: 700;
+  }
+}
+
+.buttonControl {
+  margin-left: calculateRem(260px);
+  display: flex;
+  gap: calculateRem(120px);
+}
+
+.groupWrapperMobile {
+  display: none;
+
+  @include device(mobile) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: calculateRem(20px);
+    width: 100%;
+    padding: calculateRem(31px) calculateRem(17px) calculateRem(28px)
+      calculateRem(15px);
+  }
+}
+
+.headerMobile {
+  display: none;
+
+  gap: calculateRem(10px);
+  font-weight: 600;
+  line-height: calculateRem(24px);
+  width: 100%;
+
+  @include device(mobile) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__title {
+    font-size: calculateRem(16px);
+    color: white;
+  }
+
+  &__subtitle {
+    font-size: calculateRem(8px);
+    color: $white-40;
+  }
+}
+
+.mobileTopics {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $gray-200;
+  height: calculateRem(40px);
+  padding: calculateRem(14px) calculateRem(43.5px);
+  color: $black-60;
+  border-radius: calculateRem(5px);
+  font-size: calculateRem(10px);
+  line-height: calculateRem(12.1px);
+
+  @include device(mobile) {
+    height: calculateRem(40px);
+    padding: calculateRem(10px) 0;
+  }
+}
+
+.mobileButtonControl {
+  padding: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.trashbin{
+  cursor: pointer;
+}
+
+.glossaryControl{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.editButton{
+  width: calculateRem(20px);
+  cursor: pointer
+}
