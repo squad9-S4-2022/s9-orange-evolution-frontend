@@ -12,7 +12,7 @@ const TrackHeader = ({
   topics,
   openAddNewContentModal,
 }) => {
-  const [isAdmin, setIsAdmin] = useState(false);
+  const [isAdmin, setIsAdmin] = useState(true);
   return (
     <>
       <header
