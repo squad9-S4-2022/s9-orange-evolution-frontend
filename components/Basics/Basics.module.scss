@@ -5,7 +5,7 @@
   height: calculateRem(40px);
   background-color: $orange-650;
   border-radius: calculateRem(5px);
-  color: white;
+  color: black;
   font-weight: 500;
   font-size: 1rem;
   line-height: calculateRem(19px);
@@ -16,6 +16,12 @@
 
   &:hover {
     background-color: $orange-500;
+  }
+
+  @include device(mobile) {
+    font-size: calculateRem(12px);
+    width: calculateRem(96px);
+    height: calculateRem(30px);
   }
 }
 

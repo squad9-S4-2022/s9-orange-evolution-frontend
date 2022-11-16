@@ -87,6 +87,7 @@ const GlossaryModal = ({
             label='Voltar para a aula'
             width='26.75rem'
             onClick={requestClose}
+            bgcolor="#FFA82E"
           />
         </div>
       </div>

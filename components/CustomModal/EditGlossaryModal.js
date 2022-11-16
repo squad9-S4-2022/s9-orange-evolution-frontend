@@ -9,7 +9,7 @@ https://github.com/reactjs/react-modal
 
 Modal.setAppElement('#__next');
 
-const RedirectionModal = ({ isOpen, requestClose, width, style, ...props }) => {
+const EditGlossaryModal = ({ isOpen, requestClose, width, style, ...props }) => {
   return (
     <Modal
       isOpen={isOpen}
@@ -59,4 +59,4 @@ const RedirectionModal = ({ isOpen, requestClose, width, style, ...props }) => {
   );
 };
 
-export { RedirectionModal };
+export { EditGlossaryModal };

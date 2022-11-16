@@ -4,6 +4,8 @@ import { TrackHeader } from '../../components/TrackHeader/TrackHeader';
 import { GlossaryModal } from '../../components/CustomModal/GlossaryModal';
 import { RedirectionModal } from '../../components/CustomModal/RedirectionModal';
 import Head from 'next/head';
+import { EditContentModal } from '../../components/CustomModal/EditContentModal';
+import { EditGlossaryModal } from '../../components/CustomModal/EditGlossaryModal';
 
 const topics = [
   'Fundamentos de HTML, CSS e Javascript',
@@ -216,6 +218,8 @@ const content = [
 const FullStack = () => {
   const [openGlossaryModal, setOpenGlossaryModal] = useState(false);
   const [openRedirectionModal, setOpenRedirectionModal] = useState(false);
+  const [openEditContentModal, setOpenEditContentModal] = useState(false);
+  const [openEditGlossaryModal, setOpenEditGlossaryModal] = useState(false);
 
   function openGlossary() {
     setOpenGlossaryModal(true);
@@ -231,6 +235,22 @@ const FullStack = () => {
 
   function closeRedirection() {
     setOpenRedirectionModal(false);
+  }
+
+  function openEditContent() {
+    setOpenEditContentModal(true);
+  }
+
+  function closeEditContent() {
+    setOpenEditContentModal(false);
+  }
+
+  function openEditGlossary() {
+    openEditGlossaryModal(true);
+  }
+
+  function closeEditGlossary() {
+    openEditGlossaryModal(false);
   }
 
   return (
@@ -257,6 +277,16 @@ const FullStack = () => {
       <RedirectionModal
         isOpen={openRedirectionModal}
         requestClose={closeRedirection}
+      />
+
+      <EditContentModal
+        isOpen={openEditContentModal}
+        requestClose={closeEditContent}
+      />
+
+      <EditGlossaryModal
+        isOpen={openEditGlossaryModal}
+        requestClose={closeEditGlossary}
       />
     </>
   );

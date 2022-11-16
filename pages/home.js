@@ -14,9 +14,11 @@ export default function Home() {
       <header className={styles.header}>
         <h1 className={styles.title}>O que você gostaria de aprender hoje?</h1>
         <p className={styles.description}>
-          Card description. Lorem ipsum dolor sit amet, consectetur elit adi,
-          sed do eiusm tem incididunt ut. Lorem ips dolor sit. Lorem ipsum dolor
-          sit amet, consectetur.
+          Siga por uma (ou mais) trilhas do Orange Evolution e dê o primeiro
+          passo em busca de uma nova carreira. Com o mercado aquecido para as
+          áreas de tecnologia, aqui na Orange Evolution você terá acesso ao
+          maior e melhor guia para iniciar seus estudos nas área de:
+          Desenvolvimento Full Stack, UX/UI Design e Quality Assurance (QA).
         </p>
       </header>
 
